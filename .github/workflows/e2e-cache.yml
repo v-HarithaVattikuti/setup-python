@@ -70,8 +70,9 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache: 'pipenv'
-      - name: Install pipenv
-        run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
+      # - name: Install pipenv
+      #   run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
+      # - run: pipenv install
       - name: Prepare environment
         shell: pwsh
         run: |
